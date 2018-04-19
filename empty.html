@@ -6,9 +6,10 @@ hello world!
 <div id="shakeText">Silent</div>
 </body>
 
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
 </script>
-<script>
+	
+<script type="text/javascript">
 if(window.DeviceOrientationEvent){
     $('#hint').html("suuport deviceorientation");
     var lastAcc;    // 用来存储上一次的deviceorientation事件
@@ -22,7 +23,7 @@ if(window.DeviceOrientationEvent){
         lastAcc = event;    // 存储上一次的event
     });
 } else {
-	$('#shakeText').html("Do NOT support deviceorientation!");
+    $('#shakeText').html("Do NOT support deviceorientation!");
 }
 </script>
 </html>
