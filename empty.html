@@ -7,6 +7,14 @@ hello world!
 
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="./shake.js"></script>
+<script type="text/javascript">
+  document.getElementById('hint').innerHTML = "changed";
+  if (window.DeviceOrientationEvent) {
+      document.getElementById('shakeText').innerHTML = "supported";
+  } else {
+      document.getElementById('shakeText').innerHTML = "NOT supported";
+  }
+</script>
 
 </body>
 </html>
