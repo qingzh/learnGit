@@ -1,5 +1,4 @@
-<script type="text/javascript">
-if(window.DeviceOrientationEvent){
+if (window.DeviceOrientationEvent) {
     $('#hint').html("suuport deviceorientation");
     var lastAcc;    // 用来存储上一次的deviceorientation事件
     $(window).on('deviceorientation', function(event) {
@@ -14,4 +13,3 @@ if(window.DeviceOrientationEvent){
 } else {
     $('#shakeText').html("Do NOT support deviceorientation!");
 }
-</script>
