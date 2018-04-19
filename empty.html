@@ -1,12 +1,14 @@
 <html>
 <body>
 hello world!
+	<div id="hint">Hint</div>
 	<div id="shakeText">Silent</div>
 </body>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
 </script>
 <script>
 if(window.DeviceOrientationEvent){
+    $('#hint').html("suuport deviceorientation");
     var lastAcc;    // 用来存储上一次的deviceorientation事件
     $(window).on('deviceorientation', function(event) {
         var delA = Math.abs(event.alpha - lastAcc.alpha);    // alpha轴偏转角
